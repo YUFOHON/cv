@@ -55,6 +55,11 @@ const CvCanvas = () => {
             camera={{ position: [20, 3, 5], fov: 25 }}
             gl={{ preserveDrawingBuffer: true }}
         >
+            {/* <Suspense fallback={<CanvasLoader />}>: 
+            This is a React component that 
+            suspends rendering of the canvas until its child components are
+             loaded. The fallback property sets a loading indicator component 
+             to be displayed while the child components are being loaded. */}
             <Suspense fallback={<CanvasLoader />}>
                 <OrbitControls
                     enableZoom={true}

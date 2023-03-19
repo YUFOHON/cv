@@ -9,11 +9,28 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   return (
 
     <nav
       className={`${styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
+        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-white" : "bg-transparent"
         }`}
     >
 
@@ -39,7 +56,15 @@ const Navbar = () => {
               key={nav.id}
               className={`${active === nav.title ? "text-secondary" : "text-black"
                 } hover:text-secondary text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={
+                () => {
+                  setActive(nav.title)
+                  if (nav.title === "Work" || nav.title === "Contact") {
+                    alert("Work page is under construction")
+
+                  }
+                }
+              }
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
@@ -64,6 +89,8 @@ const Navbar = () => {
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
                     }`}
                   onClick={() => {
+
+
                     setToggle(!toggle);
                     setActive(nav.title);
                   }}

@@ -1,5 +1,5 @@
 
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 // import { ComputersCanvas } from "./canvas";
@@ -26,6 +26,29 @@ const Hero = () => {
       </div>
       {/* <ComputersCanvas /> */}
       <CvCanvas />
+
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center">
+        <a href="#about">
+          <div className="w-[64px] h-[35px] rounded-3xl border-4 border-black flex justify-start  p-2">
+            <motion.dev
+              animate={{
+                x: [0, 0, 33, -0] 
+             , y: [0,0,0,0]
+              }}
+              transition={{
+                duration: 3, 
+                repeat: Infinity,
+                repeatType: "loop"
+              }}
+
+              className="w-2 h-2 rounded-full bg-primary"
+            />
+
+          </div>
+        </a>
+      </div>
+
+
     </section>
 
 
