@@ -13,17 +13,24 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <div className="bg-building">
+        <div className="bg-building relative z-0">
           <About />
+          <Experience />
+          <Works />
+          <StarsCanvas />
+          <Contact />
+
         </div>
-        {/*<Experience />
-        <Tech />
-        <Works />
+
+        {/* <Tech />
+     
         <Feedbacks />
         <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
+      
+          
         </div> */}
+
+
       </div>
     </BrowserRouter>
   )

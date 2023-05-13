@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-
+import "./navbar.css";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    let prevScrollPos = window.pageYOffset;
+
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      const currentScrollPos = window.pageYOffset;
+      const scrolledDown = prevScrollPos < currentScrollPos;
+      setScrolled(scrolledDown);
+      prevScrollPos = currentScrollPos;
+
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -30,7 +30,7 @@ const Navbar = () => {
 
     <nav
       className={`${styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-white" : "bg-transparent"
+        } w-full flex items-center py-5 fixed top-0 z-20 bg-white  ${scrolled ? "fadeOut" : "fadeIn"
         }`}
     >
 
@@ -59,10 +59,7 @@ const Navbar = () => {
               onClick={
                 () => {
                   setActive(nav.title)
-                  if (nav.title === "Work" || nav.title === "Contact") {
-                    alert("Work page is under construction")
 
-                  }
                 }
               }
             >
