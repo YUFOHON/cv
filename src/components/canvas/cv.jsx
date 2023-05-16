@@ -63,7 +63,8 @@ const CvCanvas = () => {
              to be displayed while the child components are being loaded. */}
             <Suspense fallback={<CanvasLoader />}>
                 <OrbitControls
-                    enableZoom={true}
+                    enableZoom={false}
+                    autoRotate={true}
                 // maxPolarAngle={Math.PI / 2}
                 // minPolarAngle={Math.PI / 2}
                 />

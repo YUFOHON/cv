@@ -27,7 +27,7 @@ const Hero = () => {
       {/* <ComputersCanvas /> */}
       <CvCanvas />
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center">
+      <div className="moving-button absolute xs:bottom-10 bottom-32 w-full flex justify-center">
         <a href="#about">
           <div className="w-[64px] h-[35px] rounded-3xl border-4 border-black flex justify-start  p-2">
             <motion.dev
