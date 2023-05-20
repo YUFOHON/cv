@@ -2,6 +2,7 @@ import {
   mobile,
   backend,
   creator,
+  brucebnb,
   web,
   android,
   javascript,
@@ -239,6 +240,36 @@ const projects = [
     ],
     image: Inventory,
     source_code_link: "https://github.com/YUFOHON/Inventory_Management_System_JetPackCompose",
+  }, {
+    name: "Online room booking website",
+    description:
+      "an online marketplace for short- and long-term homestays and experiences.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "black-text-gradient",
+      },
+
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Prisma",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "purple-text-gradient",
+      }
+    ],
+    image: brucebnb,
+    source_code_link: "https://github.com/YUFOHON/brucebnb",
+    demo: "https://brucebnb.vercel.app/"
   },
 
 ];

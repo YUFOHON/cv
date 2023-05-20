@@ -15,8 +15,8 @@ const App = () => {
         </div>
         <div className="bg-building relative z-0">
           <About />
-          <Experience />
           <Works />
+          <Experience />
           <StarsCanvas />
           <Contact />
 

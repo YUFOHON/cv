@@ -15,6 +15,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  demo
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -61,6 +62,17 @@ const ProjectCard = ({
               #{tag.name}
             </p>
           ))}
+        </div>
+
+        <div className='mt-2 text-center'>
+          {demo && (
+            <a
+              href={demo}
+              className="inline-block bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700"
+            >
+              Demo
+            </a>
+          )}
         </div>
       </Tilt>
     </motion.div>
