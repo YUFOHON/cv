@@ -26,6 +26,7 @@ import {
   tripguide,
   threejs,
   CRM,
+  todo,
   Inventory
 } from "../assets";
 
@@ -222,6 +223,8 @@ const projects = [
     ],
     image: CRM,
     source_code_link: "https://github.com/YUFOHON/Event-Management-System",
+    demo: "https://thankful-cliff-08e539200.3.azurestaticapps.net/"
+
   },
   {
     name: "Inventory Management App",
@@ -240,6 +243,7 @@ const projects = [
     ],
     image: Inventory,
     source_code_link: "https://github.com/YUFOHON/Inventory_Management_System_JetPackCompose",
+    demo: "https://youtu.be/gqZfwexQ4qA"
   }, {
     name: "Online room booking website",
     description:
@@ -270,6 +274,24 @@ const projects = [
     image: brucebnb,
     source_code_link: "https://github.com/YUFOHON/brucebnb",
     demo: "https://brucebnb.vercel.app/"
+  }, {
+    name: "To Do List APP",
+    description:
+      "an mobile TO DO List app.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "black-text-gradient",
+      },
+
+      {
+        name: "Dart",
+        color: "blue-text-gradient",
+      }
+    ],
+    image: todo,
+    source_code_link: "https://github.com/YUFOHON/flutter.git",
+    demo: "https://youtube.com/shorts/KYLzsNGo6NQ"
   },
 
 ];

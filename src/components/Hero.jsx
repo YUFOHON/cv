@@ -1,10 +1,12 @@
 
 import { motion } from "framer-motion";
-
+// import { typewriter, typewriterLetter } from "../utils/motion";
 import { styles } from "../styles";
+import "../utils/typewriter.css";
 // import { ComputersCanvas } from "./canvas";
 import { CvCanvas } from "./canvas";
 const Hero = () => {
+  const text = "This is my 3D CV"
   return (
     <section className={`relative w-full h-screen mx-auto`}>
 
@@ -17,14 +19,26 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-black`}>
-            Hi, I'm <span className='text-[#915EFF]'>Bruce</span>
+            Hi, I'm
+            <p className="line-1 anim-typewriter">
+              Bruce
+            </p>
+
+            {/* <div className="w-1 typewriter-effect">
+              <span className='text-[#915EFF] '>
+                Bruce
+              </span>
+            </div> */}
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-black-100`}>
-            This is my 3D CV
+          <p className={`${styles.heroSubText} typing-txt-block  bg-animation mt-2 text-black-100`}>
+            {text}
+
+
           </p>
         </div>
       </div>
       {/* <ComputersCanvas /> */}
+
       <CvCanvas />
 
       <div className="moving-button absolute xs:bottom-10 bottom-32 w-full flex justify-center">
@@ -32,11 +46,11 @@ const Hero = () => {
           <div className="w-[64px] h-[35px] rounded-3xl border-4 border-black flex justify-start  p-2">
             <motion.dev
               animate={{
-                x: [0, 0, 33, -0] 
-             , y: [0,0,0,0]
+                x: [0, 0, 33, -0]
+                , y: [0, 0, 0, 0]
               }}
               transition={{
-                duration: 3, 
+                duration: 3,
                 repeat: Infinity,
                 repeatType: "loop"
               }}
