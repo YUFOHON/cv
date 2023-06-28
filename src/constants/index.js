@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  creator,
   brucebnb,
   web,
   android,
@@ -18,16 +17,12 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   CRM,
   todo,
-  Inventory
+  Inventory,
+  dashboard,
 } from "../assets";
 
 export const navLinks = [
@@ -62,7 +57,6 @@ const services = [
     title: "Android Developer",
     icon: android,
   },
-
 ];
 
 const technologies = [
@@ -205,8 +199,7 @@ const testimonials = [
 const projects = [
   {
     name: "Event Management System",
-    description:
-      "Web-based platform that allows users to  manage event.",
+    description: "Web-based platform that allows users to  manage event.",
     tags: [
       {
         name: "vue",
@@ -223,13 +216,11 @@ const projects = [
     ],
     image: CRM,
     source_code_link: "https://github.com/YUFOHON/Event-Management-System",
-    demo: "https://thankful-cliff-08e539200.3.azurestaticapps.net/"
-
+    demo: "https://thankful-cliff-08e539200.3.azurestaticapps.net/",
   },
   {
     name: "Inventory Management App",
-    description:
-      "Android application that allows users to manage inventory.",
+    description: "Android application that allows users to manage inventory.",
     tags: [
       {
         name: "Jetpack Compose",
@@ -242,9 +233,11 @@ const projects = [
       },
     ],
     image: Inventory,
-    source_code_link: "https://github.com/YUFOHON/Inventory_Management_System_JetPackCompose",
-    demo: "https://youtu.be/gqZfwexQ4qA"
-  }, {
+    source_code_link:
+      "https://github.com/YUFOHON/Inventory_Management_System_JetPackCompose",
+    demo: "https://youtu.be/gqZfwexQ4qA",
+  },
+  {
     name: "Online room booking website",
     description:
       "an online marketplace for short- and long-term homestays and experiences.",
@@ -269,15 +262,15 @@ const projects = [
       {
         name: "TypeScript",
         color: "purple-text-gradient",
-      }
+      },
     ],
     image: brucebnb,
     source_code_link: "https://github.com/YUFOHON/brucebnb",
-    demo: "https://brucebnb.vercel.app/"
-  }, {
+    demo: "https://brucebnb.vercel.app/",
+  },
+  {
     name: "To Do List APP",
-    description:
-      "an mobile TO DO List app.",
+    description: "an mobile TO DO List app.",
     tags: [
       {
         name: "Flutter",
@@ -287,13 +280,32 @@ const projects = [
       {
         name: "Dart",
         color: "blue-text-gradient",
-      }
+      },
     ],
     image: todo,
     source_code_link: "https://github.com/YUFOHON/flutter.git",
-    demo: "https://youtube.com/shorts/KYLzsNGo6NQ"
+    demo: "https://youtube.com/shorts/KYLzsNGo6NQ",
+  },
+  {
+    name: "Dashboard",
+    description: "Dashboard for brucebnb",
+    tags: [
+      {
+        name: "Typescript",
+        color: "black-text-gradient",
+      },
+
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: dashboard,
+    source_code_link: "https://github.com/YUFOHON/admin",
+    demo: "https://admin-alpha-henna.vercel.app/",
   },
 
+  // https://admin-alpha-henna.vercel.app/
 ];
 
 export { services, technologies, experiences, testimonials, projects };

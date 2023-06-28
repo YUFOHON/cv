@@ -31,7 +31,7 @@ import todo from "./project/ToDoList.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
+import dashboard from "./project/dashboard.png";
 export {
   brucebnb,
   Inventory,
@@ -66,4 +66,5 @@ export {
   jobit,
   tripguide,
   android,
+  dashboard
 };
