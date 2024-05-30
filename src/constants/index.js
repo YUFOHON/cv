@@ -20,9 +20,10 @@ import {
   shopify,
   threejs,
   CRM,
-  todo,
+  cardio,
   Inventory,
   dashboard,
+  File_Security
 } from "../assets";
 
 export const navLinks = [
@@ -198,6 +199,95 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Online room booking website",
+    description:
+      "an online marketplace for homestays.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "black-text-gradient",
+      },
+
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Prisma",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: brucebnb,
+    source_code_link: "https://github.com/YUFOHON/brucebnb",
+    demo: "https://brucebnb.vercel.app/",
+  },
+  {
+    name: "Cardio Game",
+    description: "an cross-platform cardio game powered by computer vision.",
+    tags: [
+      {
+        name: "Unity",
+        color: "black-text-gradient",
+      },
+
+      {
+        name: "Pose estimation",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Azure",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: cardio,
+    source_code_link: "https://youtu.be/LOaHQANZimQ",
+    demo: "https://youtu.be/LOaHQANZimQ",
+  },
+  {
+    name: "Dashboard",
+    description: "Dashboard for brucebnb, day and night UI mode.",
+    tags: [
+      {
+        name: "Typescript",
+        color: "black-text-gradient",
+      },
+
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: dashboard,
+    source_code_link: "https://github.com/YUFOHON/admin",
+    demo: "https://admin-alpha-henna.vercel.app/",
+  },
+  {
+    name: "File Encryption App",
+    description: "File Encryption App using AES+RSA Encrytion/Decryption algorithm.",
+    tags: [
+      {
+        name: "Javascript",
+        color: "black-text-gradient",
+      },
+
+      {
+        name: "Tailwind CSS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: File_Security,
+    source_code_link: "https://github.com/YUFOHON/security.git",
+    demo: "https://yufohon.eu.org/security/",
+  },
+  {
     name: "Event Management System",
     description: "Web-based platform that allows users to  manage event.",
     tags: [
@@ -237,74 +327,6 @@ const projects = [
       "https://github.com/YUFOHON/Inventory_Management_System_JetPackCompose",
     demo: "https://youtu.be/gqZfwexQ4qA",
   },
-  {
-    name: "Online room booking website",
-    description:
-      "an online marketplace for short- and long-term homestays and experiences.",
-    tags: [
-      {
-        name: "Next.js",
-        color: "black-text-gradient",
-      },
-
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Prisma",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "green-text-gradient",
-      },
-      {
-        name: "TypeScript",
-        color: "purple-text-gradient",
-      },
-    ],
-    image: brucebnb,
-    source_code_link: "https://github.com/YUFOHON/brucebnb",
-    demo: "https://brucebnb.vercel.app/",
-  },
-  {
-    name: "To Do List APP",
-    description: "an mobile TO DO List app.",
-    tags: [
-      {
-        name: "Flutter",
-        color: "black-text-gradient",
-      },
-
-      {
-        name: "Dart",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: todo,
-    source_code_link: "https://github.com/YUFOHON/flutter.git",
-    demo: "https://youtube.com/shorts/KYLzsNGo6NQ",
-  },
-  {
-    name: "Dashboard",
-    description: "Dashboard for brucebnb",
-    tags: [
-      {
-        name: "Typescript",
-        color: "black-text-gradient",
-      },
-
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: dashboard,
-    source_code_link: "https://github.com/YUFOHON/admin",
-    demo: "https://admin-alpha-henna.vercel.app/",
-  },
-
   // https://admin-alpha-henna.vercel.app/
 ];
 

@@ -27,15 +27,17 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-import todo from "./project/ToDoList.png";
+import cardio from "./project/cardio.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import dashboard from "./project/dashboard.png";
+import File_Security from "./project/File_Security.png";
 export {
+  File_Security,
   brucebnb,
   Inventory,
-  todo,
+  cardio,
   CRM,
   logo,
   backend,

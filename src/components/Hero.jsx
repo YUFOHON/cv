@@ -6,7 +6,7 @@ import "../utils/typewriter.css";
 // import { ComputersCanvas } from "./canvas";
 import { CvCanvas } from "./canvas";
 const Hero = () => {
-  const text = "This is my 3D CV"
+  // const text = "This is my 3D CV"
   return (
     <section className={`relative w-full h-screen mx-auto`}>
 
@@ -31,7 +31,7 @@ const Hero = () => {
             </div> */}
           </h1>
           <p className={`${styles.heroSubText} typing-txt-block  bg-animation mt-2 text-black-100`}>
-            {text}
+            {/* {text} */}
 
 
           </p>

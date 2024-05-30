@@ -17,6 +17,10 @@ const ProjectCard = ({
   source_code_link,
   demo
 }) => {
+  // Calculate the font size based on the length of the text
+  const nameFontSize = name.length > 20 ? 'text-[18px]' : 'text-[24px]';
+  const descriptionFontSize = description.length > 22 ? 'text-[2px]' : 'text-[14px]';
+console.log(description.length)
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -49,8 +53,8 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <h3 className='text-white font-bold ${nameFontSize}'>{name}</h3>
+          <p className='mt-2 text-secondary ${descriptionFontSize}'>{description}</p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
@@ -90,7 +94,7 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-primary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-primary  text-[17px] max-w-3xl leading-[30px]'
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
