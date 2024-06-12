@@ -23,7 +23,8 @@ import {
   cardio,
   Inventory,
   dashboard,
-  File_Security
+  File_Security,
+  brucedrive,
 } from "../assets";
 
 export const navLinks = [
@@ -228,6 +229,37 @@ const projects = [
     image: brucebnb,
     source_code_link: "https://github.com/YUFOHON/brucebnb",
     demo: "https://brucebnb.vercel.app/",
+  },
+  {
+    name: "brucedrive",
+    description:
+      "an online drive like google drive.",
+    tags: [
+      {
+        name: "Vue.js",
+        color: "green-text-gradient",
+      },
+
+      {
+        name: "Spring Boot",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Mybatis",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ffmpeg",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: brucedrive,
+    source_code_link: "https://github.com/YUFOHON/brucedrive",
+    demo: "http://34.96.216.102/brucedrive/",
   },
   {
     name: "Cardio Game",

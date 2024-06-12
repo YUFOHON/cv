@@ -46,13 +46,7 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} class="text-black text-[17px] max-w-3xl leading-[30px]">
-        Introducing Bruce, a talented and driven computer science student with a passion for technology and innovation. He has a strong background in programming and software development, as well as experience in web development and data analysis.
-
-        Throughout his academic career, Bruce has demonstrated exceptional problem-solving skills and a dedication to achieving excellence in his work. He has been recognized for his outstanding academic achievements and has also participated in various extracurricular activities, including coding competitions and hackathons.
-
-        Bruce is eager to apply his skills and knowledge to real-world challenges and make a meaningful impact in the tech industry. He is particularly interested in exploring the intersection of technology and business and is committed to continuous learning and growth.
-
-        With his strong technical skills, creativity, and dedication, Bruce would be a valuable asset to any team or organization. He is excited to explore internship opportunities that align with his interests and goals, and to contribute to the advancement of technology and innovation.
+        Introducing Bruce, a talented and driven computer science student looking for job
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

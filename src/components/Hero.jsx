@@ -9,7 +9,7 @@ const Hero = () => {
   // const text = "This is my 3D CV"
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-
+      {/* left introduction */}
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -38,8 +38,12 @@ const Hero = () => {
         </div>
       </div>
       {/* <ComputersCanvas /> */}
-
+      {/* 3D model of bruce */}
       <CvCanvas />
+              {/* navigation button to github and linkin and button to download the cv*/}
+
+
+
 
       <div className="moving-button absolute xs:bottom-10 bottom-32 w-full flex justify-center">
         <a href="#about">

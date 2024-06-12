@@ -20,7 +20,7 @@ const ProjectCard = ({
   // Calculate the font size based on the length of the text
   const nameFontSize = name.length > 20 ? 'text-[18px]' : 'text-[24px]';
   const descriptionFontSize = description.length > 22 ? 'text-[2px]' : 'text-[14px]';
-console.log(description.length)
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt

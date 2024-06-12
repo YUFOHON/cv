@@ -33,6 +33,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import dashboard from "./project/dashboard.png";
 import File_Security from "./project/File_Security.png";
+import brucedrive from "./project/brucedrive.png";
 export {
   File_Security,
   brucebnb,
@@ -68,5 +69,6 @@ export {
   jobit,
   tripguide,
   android,
-  dashboard
+  dashboard,
+  brucedrive
 };
